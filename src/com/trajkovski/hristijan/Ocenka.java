@@ -36,7 +36,9 @@ public class Ocenka {
     }
 
     public void setOcenka(Integer ocenka) {
-        this.ocenka = ocenka;
+        if (ocenka > 4 && ocenka < 11) {
+            this.ocenka = ocenka;
+        }
     }
 
     @Override
